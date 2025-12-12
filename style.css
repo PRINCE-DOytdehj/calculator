@@ -1,0 +1,84 @@
+:root{
+  --bg: #eef7ee;
+  --card: #ffffff;
+  --green: #2e7d32;
+  --muted: #6b6b6b;
+  --shadow: 0 6px 18px rgba(46,125,50,0.12);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg, var(--bg), #f7faf7);
+  color: #19331a;
+  padding: 30px;
+}
+
+.calc-wrap{
+  width:100%;
+  max-width:420px;
+  text-align:center;
+}
+
+h1{
+  margin:0 0 16px;
+  font-size:1.4rem;
+  color:var(--green);
+}
+
+.card{
+  background: var(--card);
+  padding:20px;
+  border-radius:14px;
+  box-shadow: var(--shadow);
+}
+
+input[type="number"]{
+  width:100%;
+  padding:10px 12px;
+  margin:8px 0;
+  border-radius:8px;
+  border:1px solid #e6efe6;
+  outline:none;
+  font-size:1rem;
+}
+
+.btn-row{
+  display:flex;
+  gap:10px;
+  justify-content:space-between;
+  margin-top:10px;
+}
+
+.btn-row button{
+  flex:1;
+  padding:10px 8px;
+  border-radius:8px;
+  border:none;
+  font-size:1.1rem;
+  cursor:pointer;
+  background:var(--green);
+  color:white;
+  transition:transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 6px 12px rgba(46,125,50,0.12);
+}
+
+.btn-row button:hover{ transform:translateY(-2px) }
+
+.result{
+  margin-top:16px;
+  font-weight:700;
+  color:#114220;
+  font-size:1.05rem;
+}
+
+.note{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:0.9rem;
+}
